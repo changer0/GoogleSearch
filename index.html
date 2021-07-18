@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="images/googleg_standard_color_128dp.png" itemprop="image">
+    <!-- 禁止页面放大 -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
     <title>Google 搜索</title>
     <script src="jquery-3.6.0.min.js"></script>
 
@@ -39,7 +41,7 @@
         </div>
     </div>
     <div id="container">
-
+        
     </div>
 
 </body>
@@ -47,9 +49,17 @@
 <script>
     $(function () {
         console.log("入口函数执行")
-
+        $("#container").html('<div style="text-align: center; margin-top: 15%;">点击搜索按钮开始搜索吧 ^v^</div>')
         // 执行搜索
         function doSearch() {
+            $("#container").html('<div class="loading"> '+ 
+            ' <span></span> ' + 
+            ' <span></span> ' + 
+            ' <span></span> ' + 
+            ' <span></span> ' + 
+            ' <span></span> ' + 
+            '</div>')
+        
             var value = $("#input").val().trim()
             if (value == "") {
                 alert("请输入关键字")
@@ -85,4 +95,5 @@
         });
     })
 </script>
+
 </html>
