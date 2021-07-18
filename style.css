@@ -1,5 +1,5 @@
 
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 html,
 body,
 h1,
@@ -1028,7 +1028,8 @@ bdo[dir='rtl'] {
 
 .ULSxyf {
     margin-bottom: 44px;
-    padding: 0 20px
+    padding: 0 20px;
+    display: none !important;
 }
 
 .hlcw0c {
@@ -1633,6 +1634,23 @@ g-more-link.dGWpb a.Q2MMlc {
 .MXl0lf {
     font-family: arial, sans-serif-medium, sans-serif
 }
+.v-num{
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    color: #999;
+}
+.center-text {
+    text-align: center;
+    margin-top: 15%;
+    color: #1a73e8;
+}
+/* .author{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    color: #999;
+} */
 .search-box{
     position: fixed;
     top: 20px;

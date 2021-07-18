@@ -15,6 +15,8 @@
 </head>
 
 <body>
+    <span class="v-num"> V1.0.0</span>
+    <!-- <span class="author">by changer0</span> -->
     <div class="search-box">
         <input id="input" type="text" placeholder="请输入关键字">
         <div class="button-icons">
@@ -49,7 +51,7 @@
 <script>
     $(function () {
         console.log("入口函数执行")
-        $("#container").html('<div style="text-align: center; margin-top: 15%;">点击搜索按钮开始搜索吧 ^v^</div>')
+        $("#container").html('<div class="center-text">点击搜索按钮开始搜索吧 ^v^  by changer0</div>')
         // 执行搜索
         function doSearch() {
             $("#container").html('<div class="loading"> '+ 
