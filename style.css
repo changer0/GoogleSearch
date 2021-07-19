@@ -1748,3 +1748,7 @@ img {
     padding-left: 15px;
     vertical-align: baseline;
 }
+
+.BYM4Nd table {
+    display: none !important;
+}
